@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background: rgb(255, 255, 255);
+    font-size: 20px; /* Set the default font size for the entire document */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.p {
+    color: rgb(0, 0, 0);
+}
+
+.bigger {
+    font-size: 500%;
+}
+.black-background {
+    background: black;
+}
