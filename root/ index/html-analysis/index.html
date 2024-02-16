@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>HTML Reverse Engineering</title>
+    <style>
+      section { margin-top: 120px; }
+      #table-of-contents { margin: 80px 0; }
+      .grid-col-2 {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-column-gap: 40px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      Core 2 Interaction: Lab – &nbsp;<em>HTML Reverse Engineering</em>
+    </header>
+
+    <section id="table-of-contents">
+      <ul>
+        <li><a href="#screenshot">Screenshot ↓</a></li>
+        <li><a href="#analysis">Analysis ↓</a></li>
+        <li><a href="#questions">Questions ↓</a></li>
+      </ul>
+    </section>
+
+    <section id="screenshot">
+      <h2>Screenshot</h2>
+      <img src="screenshot.jpg" alt="Screenshot of website and its inspect">
+    </section>
+
+    <section id="analysis">
+      <h2>Analysis</h2>
+      <div class="grid-col-2">
+        <div>
+          <pre id="analysis--simplified-html">
+          <p> header<br> main data-barba aria-live <br> div<br>ul <br> id <br> section<br> img <br> h1 <br> h2 <br> address <br> span <br> aria-hidden <br> picture <br> h3<br> footer<br> svg </p>
+          </pre>
+        </div>
+        <div id="analysis--text">
+          <p> On the very top of the website, there are texts class= "nav-mask" is applied, and it makes us able to move to another page when clicked. Especially, ul is used to arrange the "Product", "Packagong", and "About Us" within the even space. <br>
+            h1, h2, and adress tag in here are for the small texts under those text bar.<br> 
+            Section tag overally wraps the title page, where the web site name and subheading are. <br>
+            I can also see span is used to differenciate the one letter"N" in the subheading, to add more style in the typography and aesthetic.<br>
+            The bottle in the middle of the title used picture tag and has classes "uncut" and "cut", so when we scroll down, we can see the uncut bottle photo.<br>
+            The section tag warps the each section where the items are advertised. 
+        </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="analysis--questions">
+      <h2>Questions</h2>
+      <ul>
+        <li>
+          1. What is the reason he is using section tag instead of div and make containers?
+          2. It seems like he used image from webp. what is that? what happens if the image from that web change? does that affect this website?
+          3. what does "data-barba" and "aria-live" mean?
+        </li>
+      </ul>
+    </section>
+
+  </body>
+	
+</html>
