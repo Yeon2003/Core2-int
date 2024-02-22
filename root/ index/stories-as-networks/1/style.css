@@ -61,7 +61,7 @@ body {
     .click-text {
         cursor: pointer;
         color: #FFF9F0;
-        font-size: 12px;
+        font-size: 20px;
         margin-top: 5%;
         margin-bottom: 5%;
       }
@@ -69,6 +69,18 @@ body {
       .click-text:hover {
         color: yellow;
       }
-
+      .clickable-text {
+        color: #7C8594;
+        text-decoration: transparent;
+        margin-top: 20px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-size: 20px;
+      }
+      
+      .clickable-text:hover {
+        color: yellow;
+      }
+    
   }
   
