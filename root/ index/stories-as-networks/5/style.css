@@ -242,6 +242,7 @@ html,body{
     font-size: 40px;
     cursor: pointer; 
     text-decoration: none;
+    margin-bottom: 20px;
   }
   .clickable-text:hover {
     color: #eca4ae;  
