@@ -260,6 +260,17 @@ html,body{
   font-size: 40px;
   
 }
+
+.clickable-text {
+  color: #8894A2;
+  font-size: 40px;
+  cursor: pointer; 
+  text-decoration: none;
+}
+.clickable-text:hover {
+  color: #eca4ae;  
+}
+
 @media only screen and (max-width: 1024px) {
 
   .text{
