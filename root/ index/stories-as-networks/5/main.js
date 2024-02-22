@@ -93,8 +93,3 @@ function addTextArea(target,value,font,size,weight,depth,faceColor,sideColor,int
     textContainer.appendChild(text);
   }
 }
-function toggleWallColor() {
-  var viewport = document.getElementById('viewport');
-  viewport.classList.toggle('invert-colors');
-}
-

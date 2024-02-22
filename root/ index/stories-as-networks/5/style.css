@@ -54,12 +54,10 @@ html,body{
   }
   .room .wall:nth-child(1){
     bottom:0;
-    background-color:#000000;
+    background-color:#b8c0c3;
     
     background-size:100% 100%;
-    -webkit-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
-    -moz-box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
-    box-shadow: inset 0 30px 300px 8px rgba(0,0,0,0.66);
+    
     -webkit-transform-origin:50% 100%;
     -moz-transform-origin:50% 100%;
     -o-transform-origin:50% 100%;
@@ -73,7 +71,7 @@ html,body{
   }
   .room .wall:nth-child(2){
     top:0;
-    background-color:#b8c0c3;
+    background-color:black;
     
     background-repeat:repeat;
     background-size:10% auto;
@@ -91,7 +89,7 @@ html,body{
   }
   .room .wall:nth-child(3){
     left:0;
-    background-color:#FFF9F0;
+    background-color:#2E3D50;
     
     background-size:auto 30%;
     background-repeat:repeat;
@@ -109,7 +107,7 @@ html,body{
   }
   .room .wall:nth-child(4){
     right:0;
-    background-color:#2E3D50;
+    background-color:#FFF9F0;
     
     background-size:auto 35%;
     background-repeat:repeat;
@@ -171,21 +169,22 @@ html,body{
     text-decoration: none; /* Remove underline from text */
   }
   .text{
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 32%;
+    margin-bottom: 10px;
     margin-left: 20px;
     margin-right: 20px;
     text-align: justify;
     font-size: 20px;
     font-weight: 700;
   }
-  .text2{
-    margin-top: 30px;
+  .text3{
+    margin-top: 5px;
     margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 80%;
+    margin-left: 70%;
+   margin-right: 10px;
     font-weight: 700;
     font-size: 23px;
+    text-align: right;
   }
   .button-container {
     display: flex;
@@ -197,15 +196,16 @@ html,body{
 
 .custom-button {
     padding: 10px 20px;
-    background-color: transparent;
+    
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 40px;
+    font-size: 16px;
 }
 .button-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh; /* This is optional, it centers vertically */
@@ -213,106 +213,150 @@ html,body{
 
 /* Styling the button */
 .custom-button {
-  padding: 10px 20px;
-  
-  color: #8894A2;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 40px;
-}
-.custom-button:hover {
-  color:#eca4ae;  
-}
-.change {
-  
-  color: #65222b; 
-  font-weight: 600;
-  font-size: 40px;
-  
-}
-.change2 {
-  
-  color: #8a3742; 
-  font-weight: 600;
-  font-size: 40px;
-  
-}
-.change3 {
-  
-  color:  #a9525d;  
-  font-weight: 600;
-  font-size: 40px;
-  
-}
-
-.change4 {
-  
-  color: #c67580;  
-  font-weight: 600;
-  font-size: 40px;
-  
-}
-.change5 {
-  
-  color:#eca4ae;  
-  font-weight: 600;
-  font-size: 40px;
-  
-}
-@media only screen and (max-width: 1024px) {
-
-  .text{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    text-align: justify;
-    font-size: 12px;
-    font-weight: 700;
+    padding: 10px 20px;
+    
+    color: #8894A2;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 40px;
+    margin-bottom: 5%;
   }
-  .text2{
-    margin-top: 40%;
-    margin-bottom: 20px;
-    margin-left: 20px;
-    margin-right: 60%;
-    font-weight: 700;
-    font-size: 12px;
+  .custom-button:hover {
+    color:#eca4ae;  
   }
   .change {
   
- color:#000000;
-
-    font-size: 12px;
+    color: #C4762B; 
+    font-weight: 600;
+    font-size: 40px;
     
   }
-  
-  .change2 {
-    
-    color:#000000;
+  .normal{
+    color: #dd9ba4;  
+    font-size: 30px;
+  }
 
-    font-size: 12px;
+  .clickable-text {
+    color: #8894A2;
+    font-size: 40px;
+    cursor: pointer; 
+    text-decoration: none;
+  }
+  .clickable-text:hover {
+    color: #eca4ae;  
+  }
+  .clickable-text2 {
+    color: #8894A2;
+    font-size: 40px;
+    cursor: pointer; 
+    text-decoration: none;
+    margin-bottom: 5%;
+  }
+  .clickable-text2:hover {
+    color: #eca4ae;  
+  }
+  .change2 {
+  
+    color: #8a3742; 
+    font-weight: 600;
+    font-size: 40px;
+    
   }
   .change3 {
     
-    color:#000000;
-
-    font-size: 12px;
+    color:  #a9525d;  
+    font-weight: 600;
+    font-size: 40px;
     
   }
   
   .change4 {
     
-    color:#000000;
-
-    font-size: 12px;
+    color: #c67580;  
+    font-weight: 600;
+    font-size: 40px;
     
   }
   .change5 {
     
-    color:#000000;
-
-    font-size: 12px;
+    color:#f8cdd3;  
+    font-weight: 600;
+    font-size: 40px;
     
   }
-}
+  @media only screen and (max-width: 1024px) {
+
+    .text{
+      margin-top: 74%;
+      margin-bottom: 20px;
+      margin-left: 20px;
+      margin-right: 20px;
+      text-align: justify;
+      font-size: 12px;
+      font-weight: 700;
+      text-align: justify;
+    }
+    .text3{
+        margin-top: 30%;
+        margin-bottom: 20px;
+        margin-left: 70%;
+       margin-right: 10px;
+        font-weight: 700;
+        font-size: 12px;
+        text-align: right;
+      }
+    .change {
+    
+   color:#000000;
+  
+      font-size: 12px;
+      
+    }
+    .normal{
+        color:#000000;
+  
+      font-size: 12px;
+      
+      }
+      .clickable-text2 {
+        color: #8894A2;
+        font-size: 40px;
+        cursor: pointer; 
+        text-decoration: none;
+        margin-bottom: 5%;
+        text-align: center;
+        margin-left: 4%;
+      }
+      .clickable-text2:hover {
+        color: #eca4ae;  
+      }
+      .change2 {
+  
+        color:#000000;
+  
+      font-size: 12px;
+      }
+      .change3 {
+        
+        color:#000000;
+  
+      font-size: 12px;
+        
+      }
+      
+      .change4 {
+        
+        color:#000000;
+  
+        font-size: 12px;
+        
+      }
+      .change5 {
+        
+        color:#000000;
+  
+        font-size: 12px;
+        
+      }
+  }

@@ -1,0 +1,75 @@
+
+body {
+    margin: 0px !important;
+    overflow: hidden;
+    font-weight: 700;
+  }
+  h1, h2, p {
+    font-family: "Montserrat", sans-serif;
+    text-align: left;
+    color: #FFF9F0;
+    font-size: 18px;
+    font-weight: 600px;
+  }
+  .instruction--desktop, .instruction--mobile {
+    position: absolute;
+  }
+  .instruction--mobile { display: none; }
+  
+  .background {
+    background-color: #282828;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .background__text {
+    display: none;
+    width: 400px;
+    height: 400px;
+    margin: 0px;
+    padding: 20px;
+  }
+  
+  .background__canvas {
+    width: 600px;
+    height: 400px;
+    position: absolute;
+    
+  }
+  .clickable-text{
+    font-size: 20px;
+    text-decoration: transparent;
+    color: #eca4ae;
+  }
+  
+  @media only screen and (max-width: 1024px) {
+    h1 { font-size: 15px; }
+    p { font-size: 12px; }
+    .instruction--mobile { display: block; }
+    .instruction--desktop, .background__text--onlydesktop { display: none; }
+  
+    .background__text {
+      display: none;
+      width: 180px;
+      height: 140px;
+      padding: 10px;
+      font-size: 14px;
+    }
+    
+    .background__canvas {
+      width: 200px;
+      height: 160px;
+  
+    }
+    .clickable-text{
+        font-size: 16px;
+        text-decoration: transparent;
+        color: #eca4ae;
+        
+      }
+  }

@@ -6,11 +6,12 @@ function toggleStyles() {
 
     if (body.classList.contains("black-background")) {
         biggerElements.forEach(function(element) {
-            element.style.color = "white";
+            element.style.color = "#081F5c";
         });
     } else {
         biggerElements.forEach(function(element) {
             element.style.color = "black";
         });
     }
+    
 }
