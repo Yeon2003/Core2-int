@@ -1,0 +1,95 @@
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.puzzle-container {
+    position: relative;
+    width: 1400px; 
+    height: 2250px; 
+    border: 2px solid #000; 
+    
+   
+    background-size: 30px 30px; 
+    background-image:
+        linear-gradient(90deg, #ccc 50%, white 50%),
+        linear-gradient(90deg, white 50%, #ccc 50%);
+}
+
+.puzzle-piece {
+    position: absolute;
+    cursor: pointer;
+}
+.jk1 {
+    top: 0;
+    left: 0;
+}
+.h1{
+
+}
+
+area {
+    outline: 1px solid transparent;
+}
+
+
+area:hover {
+    outline: 1px solid yellow; 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.checkerboard {
+    width: 100%;
+    height: 100%;
+    background-size: 30px 30px; 
+    background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+    background-position: 0 0, 15px 0, 15px -15px, 0px 15px; 
+}
+
+.title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+   
+  }
