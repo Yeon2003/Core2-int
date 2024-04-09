@@ -24,6 +24,7 @@
     font-family: "Ubuntu", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 20px;
 }
 
 
@@ -245,7 +246,8 @@ body, html {
     font-family: "Press Start 2P", system-ui;
     font-weight: 400;
     font-style: normal;
-    font-size: 40px;
+    font-size: 44px;
+    text-align: center;
    
   }
   .portrait {
@@ -259,4 +261,12 @@ body, html {
     max-height: 30%; 
     display: block; 
     margin: auto; 
+}
+.center-text {
+    text-align: center;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-size: 25px;
 }
