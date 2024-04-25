@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #dde1ce;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-item {
+    margin: 10px;
+}
+
+.flex-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+
+
+.paragraphs p {
+    margin: 0 0 20px; 
+    font-size: 15px;
+    font-weight: 300;
+}
+
+
+.title{
+    font-family: "loos-normal", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
+margin-left: 5%;
+margin-right: 3%;
+}
+
+.name{
+    font-family: "loos-normal", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 28px
+}
+
+.video-container {
+    display: block; /* Ensure the video is displayed as a block element */
+    margin: 20px auto; /* Adjust margins as needed */
+}
+
+
+.video {
+    width: 100%; /* Adjust the width as needed */
+    max-width: 3000px; /* Set a maximum width to avoid it being too large */
+    height: auto; /* Maintain aspect ratio */
+}

@@ -1,0 +1,47 @@
+body {
+    --spacing: 24px;
+  
+    font-family: sans-serif;
+    padding: var( --spacing);
+    display: grid;
+    gap: calc(var(--spacing) * 2);
+  }
+  
+  @media (min-width: 600px) {
+    body { 
+        --spacing: 32px;
+    }
+  }
+  
+  h1 {
+    font-size: 200%;
+    font-weight: bold;
+  }
+  
+  label { opacity: 50%; }
+  
+  select, ul {
+    background-color: #eee;
+    border-radius: calc(var(--spacing) / 4);
+  }
+  
+  select {
+    margin-left: calc(var(--spacing) / 4);
+    padding: calc(var(--spacing) / 4);
+    text-align: center;
+    width: fit-content;
+  }
+  
+  
+  #graph {
+    --total: calc(var(--live) + var(--installed) + var(--repair));
+}
+
+#graph .live { width: calc(var(--live) / var(--total) * 100%); }
+#graph .installed { width: calc(var(--installed) / var(--total) * 100%); }
+#graph .repair { width: calc(var(--repair) / var(--total) * 100%); }
+
+.live { background-color: green; }
+.installed { background-color: blue; }
+.repair { background-color: yellow; }
+

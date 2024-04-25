@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkNYC Kiosk Status</title>
+  
+    <link rel="stylesheet" href="style.css"
+</head>
+<body>
+    <h1>LinkNYC Kiosk Status</h1>
+    <form>
+        <label for="dropdown">Select Status</label>
+        <select id="dropdown" name="dropdown">
+            <option>All</option>
+            <option>Live</option>
+            <option>Installed</option>
+            <option>Repair</option>
+        </select>
+    </form>
+    <ul id="graph">
+        <li class="live"></li>
+        <li class="installed"></li>
+        <li class="repair"></li>
+    </ul>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
