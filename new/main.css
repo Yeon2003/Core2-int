@@ -1,0 +1,292 @@
+body{
+    height:100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    font-family: 'Comfortaa', cursive;
+    background-color: rgb(7, 8, 51);
+}
+
+h1{
+    border-style: double;
+    border-width: 10px;
+
+    font-family: 'Comfortaa', cursive;
+        font-size: 40px;
+        color: #fff;
+        text-shadow:
+          /* White glow */
+          0 0 7px #fff,
+          /* 0 0 10px #fff, */
+          /* 0 0 21px #fff, */
+          /* Green glow */
+          0 0 20px rgb(242, 0, 255),
+          0 0 30px rgb(255, 0, 217),
+          /* 0 0 92px #0fa, */
+          /* 0 0 102px #0fa, */
+          0 0 40px rgb(251, 0, 255);
+
+          box-shadow:  /* White glow */
+          0 0 7px #fff,
+          /* 0 0 10px #fff, */
+          /* 0 0 21px #fff, */
+          /* Green glow */
+          0 0 20px rgb(242, 0, 255),
+          0 0 30px rgb(255, 0, 217),
+          /* 0 0 92px #0fa, */
+          /* 0 0 102px #0fa, */
+          0 0 40px rgb(251, 0, 255);
+    
+}
+
+span{
+    font-size: 60px;
+    /* font-family: 'Bungee Outline', cursive; */
+}
+
+.head{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+}
+
+.boroughs{
+    margin-left: 7vw;
+    display: flex;
+    flex-direction: row;
+    padding: 12px;
+    border-width: 4px;
+    border-style: dotted;
+    border-color:#fff; ;
+    box-shadow:  /* White glow */
+    0 0 7px #fff,
+    /* 0 0 10px #fff, */
+    /* 0 0 21px #fff, */
+    /* Green glow */
+    0 0 10px rgb(0, 213, 255),
+    0 0 20px rgb(0, 191, 255),
+    0 0 50px rgb(0, 132, 255); */
+    
+}
+
+button{
+    font-size: 23px;
+    width:min-content;
+    height: min-content;
+    margin-left: 10px;
+    background:-webkit-radial-gradient(#f9c1f0, #851d5f);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    border:none;
+    font-family: 'IBM Plex Mono', monospace;
+    
+    
+}
+
+button:hover{
+    cursor: pointer;
+   font-size: 26px;
+    
+ }
+
+#manhattanBtn{
+    background:-webkit-radial-gradient(#ffdd99, #7d2564);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+
+}
+
+#brooklynBtn{
+    background:-webkit-radial-gradient(#e8a3cd, #721f81);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+#bronxBtn{
+    background:-webkit-radial-gradient(#f9c1f0, #132da3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+#queensBtn{
+    background:-webkit-radial-gradient(#c1e5f9, #1625cc);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+
+
+
+ #manhattan-list{
+    color: rgb(253,187,45);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+ }
+
+ #brooklyn-list{
+    color: rgb(252,72,214);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+ }
+
+ #bronx-list{
+    color: rgb(179,91,244);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+ }
+
+ #queens-list {
+    color: rgb(85,211,252);
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+ }
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+ .artwork{
+    display: flex;
+    flex-direction: row;
+ }
+
+ .line {
+    
+    width: 3vw;
+ }
+ .manhattan .line {
+    background: rgb(253,187,45);
+background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(195,34,122,1) 100%);
+ }
+
+ .brooklyn .line {
+    background: rgb(252,72,214);
+    background: linear-gradient(0deg, rgba(252,72,214,1) 0%, rgba(116,31,238,1) 100%);
+ }
+ .bronx .line {
+    background: rgb(179,91,244);
+background: linear-gradient(0deg, rgba(179,91,244,1) 4%, rgba(44,57,255,1) 100%);
+}
+
+ .queens .line {
+    background: rgb(85,211,252);
+background: linear-gradient(0deg, rgba(85,211,252,1) 5%, rgba(5,59,187,1) 100%);
+ }
+
+ .metadata {
+    text-align: center;
+    display: none;
+    position:absolute;
+    z-index: 1;
+    top: 27%;
+    left: 40%;
+    width: 18vw;
+    font-size: 15px;
+    line-height: 150%;
+   
+ }
+
+ .title{
+    font-size: 17px;
+    text-decoration: underline;
+ }
+
+ .line:hover ~ .metadata{
+    display:block;
+   
+ }
+
+ .line:hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(240, 248, 255, 0.469);
+    cursor: pointer;
+
+ }
+
+ canvas {
+    position:fixed;
+    background: rgb(7, 8, 51);;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 1000px){
+    .metadata {font-size: 10px;  height: 10vh; top: 33%; line-height: 100%;
+}
+.head{
+    flex-direction: column;
+    align-items:center;
+}
+
+button {font-size: 15px;
+}
+
+h1{
+    font-size: 30px;
+}
+
+.boroughs{
+    margin: 0;
+}
+.title{
+    font-size: 12px;
+    text-decoration: none;
+}
+span{
+    font-size: 50px;
+}
+
+}
+
+@media (max-width:1439px){
+    
+
+    .metadata{
+        top:40%;
+        line-height: 110%;
+    }
+   
+    .title{
+        line-height: 120%;
+    }
+
+}
+
+.metadata-image {
+    display: none;
+}
+
+.metadata-image img {
+    min-width: 18vw;
+    min-height: 18vh;
+    max-width: 23vw;
+    max-height: 25vw;
+    box-shadow:  /* White glow */
+    0 0 7px #fff,
+    /* 0 0 10px #fff, */
+    /* 0 0 21px #fff, */
+    /* Green glow */
+    0 0 10px rgb(255, 0, 170),
+    0 0 20px rgb(255, 0, 132),
+    0 0 50px rgb(255, 0, 72);;
+}
+
+.artwork.active .metadata-image {
+    display: block;
+}
+
+.artwork.active .metadata-text {
+    display: none;
+}

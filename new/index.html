@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Comfortaa:wght@300&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+		
+<script src="https://kit.fontawesome.com/bb94aa9b65.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+	<title>NYC Data</title>
+</head>
+<body>
+<div class="head">
+	<h1>Temporary Public Art in <span>NYC</span></h1>
+	<div class="boroughs">
+		<button id="allBurroughs" onclick="refresh()">All Boroughs</button>
+		<button id="manhattanBtn" onclick="manhattanBtn()"><i class="fa-sharp fa-solid fa-location-dot"></i> Manhattan</button>
+		<button id="brooklynBtn" onclick="brooklynBtn()"><i class="fa-sharp fa-solid fa-location-dot"></i> Brooklyn</button>
+		<button id="bronxBtn" onclick="bronxBtn()"><i class="fa-sharp fa-solid fa-location-dot"></i> Bronx</button>
+		<button id="queensBtn" onclick="queensBtn()"><i class="fa-sharp fa-solid fa-location-dot"></i> Queens</button>
+	</div>
+</div>
+<div class="container">
+	<div id="manhattan-list"></div>
+	<div id="brooklyn-list"></div>
+	<div id="bronx-list"></div>
+	<div id="queens-list"></div>
+</div>
+
+<canvas id="starfield" width="750" height="500"></canvas>
+<script defer src="assets/data.js"></script>
+</body>
+</html>
