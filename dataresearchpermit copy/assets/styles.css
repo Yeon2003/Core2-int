@@ -1,0 +1,707 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 180px; /* Adjust according to your layout */
+  margin: auto; /* Center the grid */
+}
+
+.image-row {
+  display: flex;
+}
+
+.image-cell {
+  width: 200px;
+  height: 200px;
+  margin: 2px;
+  overflow: hidden;
+}
+
+.image-cell img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.title {
+  text-align: center; /* Center the title horizontally */
+  margin-bottom: 20px; /* Add some spacing below the title */
+}
+.box1 {
+	width: 200px;
+	height: 200px; 
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(algae.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box1 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box1::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(algae.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box1:hover::after {
+  opacity: 1; 
+}
+
+.box2 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Amphibians.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box2 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box2::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Amphibians.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box2:hover::after {
+  opacity: 1; 
+}
+
+.box3 {
+	width: 200px;
+	height: 200px; 
+	font-size: 2em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Arthropods.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box3 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box3::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Arthropods.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box3:hover::after {
+  opacity: 1; 
+}
+
+.box4 {
+	width: 200px;
+	height: 200px; 
+	font-size: 5em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Birds.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box4 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box4::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Birds.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box4:hover::after {
+  opacity: 1; 
+}
+
+
+.box5 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Crustaceans.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box5 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box5::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Crustaceans.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box5:hover::after {
+  opacity: 1; 
+}
+
+.box6 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Fish.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box6 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box6::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Fish.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box6:hover::after {
+  opacity: 1; 
+}
+
+.box7 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(HumanHealth.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box7 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box7::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(HumanHealth.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box7:hover::after {
+  opacity: 1; 
+}
+
+
+.box8 {
+	width: 200px;
+	height: 200px; 
+	font-size: 2em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Invertebrates.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box8 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box8::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Invertebrates.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box8:hover::after {
+  opacity: 1; 
+}
+
+
+.box9 {
+	width: 200px;
+	height: 200px; 
+	font-size: 3em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Mammals.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box9 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+.box9::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Mammals.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box9:hover::after {
+  opacity: 1; 
+}
+
+.box10 {
+	width: 200px;
+	height: 200px; 
+	font-size: 2.5em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Microorganisms.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box10 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+.box10::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Microorganisms.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box10:hover::after {
+  opacity: 1; 
+}
+
+.box11 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(water.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box11 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box11::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(water.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box11:hover::after {
+  opacity: 1; 
+}
+
+.box12 {
+	width: 200px;
+	height: 200px; 
+	font-size: 4em;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	text-transform: Uppercase;
+	color: black;
+ 
+	background-image: url(Plants.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center;
+}
+
+.box12 div {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	height: 100%;
+  
+    mix-blend-mode: lighten;
+    color: black;
+    background-color: white;
+  
+}
+
+.box12::after {
+  content: ''; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(Plants.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  z-index: -1; 
+}
+
+.box12:hover::after {
+  opacity: 1; 
+}
+
+
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  background-color: black;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+}
+
+.textbox {
+  position: relative;
+}
+
+.textbox > span {
+  position: absolute;
+  color: white;
+}
+
+.text1 {
+  font-size: 11px;
+  font-family: Arial, sans-serif;
+  top: 5px;
+  left: 5px;
+}
+
+.text2 {
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  top: 5px;
+  right: 5px;
+}
+
+.text3 {
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.chart-grid {
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-row {
+  display: flex;
+  margin-top: 20px;
+}
+
+.text-column {
+  width: 100px; /* Adjust width as needed */
+  display: flex;
+  flex-direction: column;
+}
+
+.chart-text {
+  margin-bottom: 10px;
+}
+
+.chart-column {
+  width: 250px; /* Adjust width as needed */
+  height: 400px; /* Adjust height as needed */
+  margin-right: 5px;
+  border: 1px solid black; /* Add black outline */
+  background-color: white; /* Set white fill */
+}
+
+
+
+.big-rectangle {
+  width: 200px; /* Adjust width as needed */
+  height: 800px; /* Adjust height as needed */
+  background-color: lightblue; /* Placeholder color */
+  margin-left: 5px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto 200px; /* Two columns */
+  grid-gap: 10px; /* Gap between grid items */
+  margin: 20px auto; /* Center the grid */
+}
+.borough {
+  padding: 10px;
+  text-align: center;
+}
+.boxxx {
+  background-image: url('petridish.png'); /* Set background image */
+  background-size: contain; /* Scale image to fit within the box */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center; /* Center the background image */
+  
+  width: 230px; /* Adjust box width as needed */
+  height: 230px; /* Adjust box height as needed */
+  margin-bottom: 20px;
+}
