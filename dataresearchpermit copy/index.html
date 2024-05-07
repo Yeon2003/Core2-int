@@ -6,24 +6,24 @@
     <title>Image Grid</title>
     <link rel="stylesheet" href="assets/styles.css">
     <script src="assets/script.js" defer></script>
+    <link rel="stylesheet" href="https://use.typekit.net/buo1dew.css">
 </head>
 <body>
-  <h1 class="title">Scientific Research Permi in NYC Parks</h1>
+    <h1 class="title">Scientific Research Permits in NYC Parks</h1>
+  </div>
+  
   <div class="container">
 
     <div class="chart-grid">
       <div class="chart-row">
         <div class="grid-container">
           <div class="borough">Bronx</div>
-          <div class="boxxx"></div>
+          <div class="boxxx bronx"></div>
           <div class="borough">Brooklyn</div>
-          <div class="boxxx"></div>
+          <div class="boxxx brooklyn"></div>
           <div class="borough">Manhattan</div>
-          <div class="boxxx"></div>
-          <div class="borough">Queens</div>
-          <div class="boxxx"></div>
-          <div class="borough">Staten Island</div>
-          <div class="boxxx"></div>
+          <div class="boxxx manhattan"></div>
+      
         </div>
       </div>
     </div>
@@ -32,61 +32,80 @@
     <div class="image-grid">
         <div class="image-row">
           
-          <div class="box1" onclick="fetchData('Algae')">
-            <div>Algae</div>
-        </div>
+          <div class="box1" onclick="addbacteria('Algae')">
+          <div> Algae</div>
+            
+          </div>
+          
 
-          <div class="box2">
+          <div class="box2" onclick="addbacteria('Amphibians')">
             <div>Amphi<br>bians</div>
           </div>
 
-          <div class="box3">
+          <div class="box3" onclick="addbacteria('Arthropods')">
             <div>Arthropods</div>
           </div>
 
         </div>
         <div class="image-row">
-          <div class="box4">
+          <div class="box4" onclick="addbacteria('Birds')">
             <div>Birds</div>
           </div>
-          <div class="box5">
-            <div>Crusta<br>ceans</div>
+          <div class="box5" onclick="addbacteria('Crustaceans')">
+            <div>Crustaceans</div>
           </div>
-          <div class="box6">
+          <div class="box6" onclick="addbacteria('Fish')">
             <div>Fish</div>
           </div>
         </div>
         <div class="image-row">
-          <div class="box7">
+          <div class="box7" onclick="addbacteria('Human Health')">
             <div>Human<br>Health</div>
           </div>
-          <div class="box8">
+          <div class="box8" onclick="addbacteria('Invertebrates')">
             <div>Invertebrates</div>
           </div>
-          <div class="box9">
+          <div class="box9" onclick="addbacteria('Mammals')">
             <div>Mammals</div>
           </div>
         </div>
         <div class="image-row">
-          <div class="box10">
+          <div class="box10" onclick="addbacteria('Microorganisms')">
             <div>Micro<br>organisms</div>
           </div>
 
-          <div class="box11">
+          <div class="box11" onclick="addbacteria('Water quality')">
             <div>Water</div>
           </div>
 
-          <div class="box12">
+          <div class="box12" onclick="addbacteria('Plants')">
             <div>Plants</div>
           </div>
         </div>
         <div class="image-row">
-            <div class="image-cell"><img src="assets/other.jpg" alt="Other"></div>
+            
             <!-- If you meant Water quality/Hydrology, then it should be "WaterQuality.jpg" -->
         </div>
     </div>
 
-    <div class="big-rectangle"></div>
+     <div class="chart-grid2">
+      <div class="chart-row">
+        <div class="grid-container">
+          
+          <div class="boxxx queens"></div>
+          <div class="borough">Queens</div>
+         
+          <div class="boxxx Staten Island"></div>
+          <div class="borough">Staten<br>Island</div>
+     
+          
+          <div class="boxxx More"></div>
+          <div class="borough">More than<br> 2 boroughs</div>
+         
+          
+        </div>
+      </div>
+     </div>
 </div>
 
   </div>
