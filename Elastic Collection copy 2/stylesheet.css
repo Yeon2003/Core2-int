@@ -1,0 +1,305 @@
+
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.item.is-active .modal {
+    display: block;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    font-family: "Ubuntu", sans-serif;
+    font-weight: 400;
+  font-optical-sizing: auto;
+ 
+  
+  font-size: 20px;
+}
+
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.puzzle-container {
+    position: relative;
+    /* width: 1400px;  */
+   /* height: 3000px; */
+
+    border: 2px solid #000; 
+    
+    background: #eee;
+background-image: linear-gradient(45deg, rgba(0,0,0,.25) 25%,
+                  transparent 0, transparent 75%, rgba(0,0,0,.25) 0),
+                  linear-gradient(45deg, rgba(0,0,0,.25) 25%,
+                  transparent 0, transparent 75%, rgba(0,0,0,.25) 0);
+background-position: 0 0, 35px 35px;
+background-size: 70px 70px;
+
+}
+
+.puzzle-piece {
+    position: absolute;
+    cursor: pointer;
+}
+
+#events {
+    --column-height:calc(68vw / 21);
+    --column-width: calc(50vw / 15);
+    display: grid;
+    grid-template-columns: repeat(15, var(--column-width));
+    grid-template-rows: repeat(21, var(--column-height));
+    margin-left: 25%;
+    
+}
+
+.item img {
+    width: 100%;
+}
+
+.item-lf1 {
+    grid-column: span 5;
+}
+
+.item-lf2 {
+    grid-column: span 3;
+    margin-left: calc(-1 * var(--column-width));
+}
+
+.item-lf3 {
+    grid-column: span 2;
+    margin-left: calc(-2 * var(--column-width));
+}
+
+.item-lf4 {
+    grid-column: span 4;
+}
+
+.item-lf5 {
+    grid-column: span 1;
+    margin-left: calc(-3 * var(--column-width));
+}
+.item-lf6 {
+    grid-column: span 4;
+    margin-top: calc(2 * var(--column-height));
+}
+.item-lf7 {
+    grid-column: span 9;
+    margin-top: calc(-1 * var(--column-height));
+    margin-left: calc(4 * var(--column-width));
+}
+
+.item-lf26 {
+    grid-column: span 2;
+    margin-top: calc(3 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf8 {
+    grid-column: span 3;
+    margin-top: calc(5 * var(--column-height));
+    margin-left: calc(0 * var(--column-width));
+}
+
+.item-lf11 {
+    grid-column: span 2;
+    margin-top: calc(4 * var(--column-height));
+    margin-left: calc(-1 * var(--column-width));
+}
+.item-lf12 {
+    grid-column: span 2;
+    margin-top: calc(4 * var(--column-height));
+    margin-left: calc(-1 * var(--column-width));
+}
+.item-lf13 {
+    grid-column: span 2;
+    margin-top: calc(4 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf14 {
+    grid-column: span 15;
+    margin-top: calc(1 * var(--column-height));
+    margin-left: calc(11 * var(--column-width));
+}
+.item-lf9 {
+    grid-column: span 2;
+    margin-top: calc(6 * var(--column-height));
+    margin-left: calc(-1 * var(--column-width));
+}
+.item-lf10 {
+    grid-column: span 1;
+    margin-top: calc(6 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf27 {
+    grid-column: span 1;
+    margin-top: calc(6 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf15 {
+    grid-column: span 6;
+    margin-top: calc(7 * var(--column-height));
+    margin-left: calc(0 * var(--column-width));
+}
+.item-lf28 {
+    grid-column: span 4;
+    margin-top: calc(8 * var(--column-height));
+    margin-left: calc(0 * var(--column-width));
+}
+.item-lf16 {
+    grid-column: span 2;
+    margin-top: calc(8 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf17 {
+    grid-column: span 2;
+    margin-top: calc(7 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+
+.item-lf22 {
+    grid-column: span 15;
+    margin-top: calc(5 * var(--column-height));
+    margin-left: calc(11 * var(--column-width));
+}
+.item-lf19 {
+    grid-column: span 4;
+    margin-top: calc(9 * var(--column-height));
+    margin-left: calc(0 * var(--column-width));
+}
+.item-lf20 {
+    grid-column: span 3;
+    margin-top: calc(9 * var(--column-height));
+    margin-left: calc(-1 * var(--column-width));
+}
+.item-lf21 {
+    grid-column: span 2;
+    margin-top: calc(10 * var(--column-height));
+    margin-left: calc(-2 * var(--column-width));
+}
+.item-lf23 {
+    grid-column: span 15;
+    margin-top: calc(8 * var(--column-height));
+    margin-left: calc(9 * var(--column-width));
+}
+.item-lf24 {
+    grid-column: span 6;
+    margin-top: calc(9 * var(--column-height));
+    margin-left: calc(0 * var(--column-width));
+}
+.item-lf25 {
+    grid-column: span 15;
+    margin-top: calc(9 * var(--column-height));
+    margin-left: calc(8 * var(--column-width));
+}
+/* .item {
+    flex: 25% 0 0;
+} */
+
+area {
+    outline: 1px solid transparent;
+}
+
+
+area:hover {
+    outline: 1px solid yellow; 
+}
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.checkerboard {
+    width: 100%;
+    height: 100%;
+    background-size: 30px 30px; 
+    background-image:
+        linear-gradient(45deg, #ccc 25%, transparent 25%),
+        linear-gradient(-45deg, #ccc 25%, transparent 25%),
+        linear-gradient(45deg, transparent 75%, #ccc 75%),
+        linear-gradient(-45deg, transparent 75%, #ccc 75%);
+    background-position: 0 0, 15px 0, 15px -15px, 0px 15px; 
+}
+
+.title {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+   
+  }
+  .portrait {
+
+    display: flex;
+  flex-direction: row;
+
+  }
+  .modal-image {
+    max-width: 30%;
+    max-height: 30%; 
+    display: block; 
+    margin: auto; 
+}
+.center-text {
+    text-align: center;
+    margin-left: 10%; 
+    margin-right: 10%; 
+    font-family: "Pixelify Sans", sans-serif;
+    font-optical-sizing: auto;
+  font-size: 18px;
+  padding-bottom: 50px;
+  justify-content: left;
+ 
+}
+
+@media only screen and (max-width: 700px) {
+    .title {
+      font-size: 20px;
+    }
+    .center-text {
+        text-align: center;
+        margin-left: 10%; 
+        margin-right: 10%; 
+        font-family: "Pixelify Sans", sans-serif;
+        font-optical-sizing: auto;
+      font-size: 13px;
+      padding-bottom: 50px;
+      justify-content: left;}
+     
+    .modal-content {
+       
+        
+     
+      font-size: 15px;
+    }
+    .modal-image {
+        max-width: 25%;
+        max-height: 25%; 
+        display: block; 
+        margin: auto; 
+    }
+  }
