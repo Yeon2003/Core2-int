@@ -20,3 +20,15 @@ a {
     text-align: center; /* Centers the link horizontally */
     margin-top: 20px; /* Adds some space between the grid and the link */
 }
+.title {
+    font-family: "the-seasons", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
+}
+h3 {
+    font-family: "the-seasons", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}
