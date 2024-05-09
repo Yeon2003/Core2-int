@@ -1,0 +1,18 @@
+.title {
+    font-family: "the-seasons", sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 40px;
+text-align: center; 
+color:beige
+}
+a {
+    display: block; /* Ensures link appears as a block element */
+    text-align: center; /* Center the link text horizontally */
+    margin-top: 20px; /* Adds some space between the grid and the link */
+    font-size: 30px;
+    color: beige;
+}
+body{
+    background-color: black;
+}
