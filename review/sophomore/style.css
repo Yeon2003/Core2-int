@@ -1,0 +1,21 @@
+.grid-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.img {
+    width: 45vw;
+    height: auto;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: block; /* Ensures link appears as a block element */
+    text-align: center; /* Centers the link horizontally */
+    margin-top: 20px; /* Adds some space between the grid and the link */
+}
